@@ -22,9 +22,18 @@ console.log( sumar(5, 10) )
 /* función de conversión de temperatura */
 function convertirTem( grados, unidad )
 {
-    if( unidad  )
+    if( unidad == 'f'  ){
+        //convertir a Fahrenheit
+        return ( grados * 1.8 ) + 32
+    }
+    else{
+        // convertir a Celsius
+        return ( grados - 32 ) / 1.8
+    }
 }
 
 
-let celsius = convertirTem( 19, 'f' )
-let farenheit = convertirTem( 56, 'c' )
+let celsius = convertirTem( 25, 'f' )
+let farenheit = convertirTem( 77, 'c' )
+console.log( '25 Fº =', celsius)
+console.log( '77 Cº =', farenheit )
