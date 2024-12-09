@@ -15,7 +15,6 @@ function darFormato( milisegundos )
     const formattedMillis = String(millis).padStart(3, '0');
 
     cajaTexto.innerText = `${formattedMinutes}:${formattedSeconds}:${formattedMillis}`;
-     
 }
 
 function incrementar()
