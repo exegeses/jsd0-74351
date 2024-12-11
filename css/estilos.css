@@ -57,3 +57,23 @@ nav{
     border-radius: 8px;
     transition: 500ms;
 }
+
+#rotador{
+    width: 600px;
+    background-color: hsl(300, 60%, 4%);
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1.5em;
+    font-family: 'Monda', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    #rotador img{
+        filter: invert();
+        cursor: pointer;
+        transition: 500ms;
+    }
+    #rotador img:hover{
+        transform: scale(1.3);
+    }
